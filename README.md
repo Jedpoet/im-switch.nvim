@@ -1,4 +1,4 @@
-# nvim-im-switch
+# im-switch.nvim
 
 🌸 A simple Windows-only Neovim plugin to auto-switch input method between Chinese (or other language) and English using Windows API (imm32.dll).
 
