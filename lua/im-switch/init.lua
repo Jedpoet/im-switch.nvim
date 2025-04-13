@@ -40,7 +40,6 @@ local function set_keyboard_layout(layout)
     ffi.C.PostMessageA(hwnd, WM_INPUTLANGCHANGEREQUEST, 0, layout)
 end
 
-
 -- 初始 layout 記錄
 M.last_im_layout = 0x0409
 
