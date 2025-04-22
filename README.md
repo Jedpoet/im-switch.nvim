@@ -2,7 +2,7 @@
 
 🌸 A simple Windows-only Neovim plugin to auto-switch input method between Chinese (or other language) and English using Windows API (imm32.dll).
 
-🌸 一個簡單的Neovim插件，讓你不用每次在Normal 和 Instrt 模式中切換是要一直切換輸入法。使用Windows的API(imm32.dll)，不用另外安裝其他工具。
+🌸 一個簡單的Neovim插件，讓你不用每次在Normal 和 Instrt 模式中切換時要一直切換輸入法。使用Windows的API(imm32.dll)，不用另外安裝其他工具。
 
 ## Features
 

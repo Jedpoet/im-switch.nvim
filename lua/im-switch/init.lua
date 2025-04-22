@@ -1,5 +1,21 @@
 -- 提供呼叫函數
 local M = {}
+
+if vim.g.neovide then
+    vim.g.neovide_input_ime = false
+    vim.api.nvim_create_autocmd("InsertEnter", {
+        callback = function()
+            vim.g.neovide_input_ime = true
+        end,
+    })
+    vim.api.nvim_create_autocmd("InsertLeave", {
+        callback = function()
+            vim.g.neovide_input_ime = false
+        end,
+    })
+    return M
+end
+
 if vim.loop.os_uname().sysname ~= "Windows_NT" then
     return M
 end
