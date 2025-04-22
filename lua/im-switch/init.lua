@@ -2,21 +2,25 @@
 local M = {}
 
 if vim.g.neovide then
-    vim.g.neovide_input_ime = false
-    vim.api.nvim_create_autocmd("InsertEnter", {
-        callback = function()
-            vim.g.neovide_input_ime = true
-        end,
-    })
-    vim.api.nvim_create_autocmd("InsertLeave", {
-        callback = function()
-            vim.g.neovide_input_ime = false
-        end,
-    })
+    function M.setup()
+        vim.g.neovide_input_ime = false
+        vim.api.nvim_create_autocmd("InsertEnter", {
+            callback = function()
+                vim.g.neovide_input_ime = true
+            end,
+        })
+        vim.api.nvim_create_autocmd("InsertLeave", {
+            callback = function()
+                vim.g.neovide_input_ime = false
+            end,
+        })
+    end
     return M
 end
 
 if vim.loop.os_uname().sysname ~= "Windows_NT" then
+    function M.setup()
+    end
     return M
 end
 
