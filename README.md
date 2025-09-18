@@ -22,11 +22,11 @@
 ### Requirements
 
 - [neovim](https://github.com/neovim/neovim) 0.9+
+- Windows
+    + At least one installed English input method（安裝任意一種純英文輸入法
 
 ### Choice
 
-- Windows
-    + At least one installed English input method（安裝任意一種純英文輸入法
 - [Neovide](https://neovide.dev/)
 
 🔧 Install
